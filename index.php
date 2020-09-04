@@ -4,6 +4,8 @@ require 'vendor/autoload.php';
 
 use Model\SmartChallengeModel;
 
+
+
 if ($_GET['filter'] == 'biggestbudget'){
     SmartChallengeModel::listUsersByBiggestBudget();
 }
@@ -19,7 +21,9 @@ if ($_GET['filter'] == 'A-Z'){
 if ($_GET['filter'] == 'Z-A'){
     SmartChallengeModel::listUsersByNameZA();
 }
-
+if (isset($_GET['start']) && isset($_GET['end'])){
+    SmartChallengeModel::listUsersNoFilter();
+}
 
 
 

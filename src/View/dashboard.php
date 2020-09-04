@@ -16,16 +16,23 @@
         <a href="/?filter=Z-A"><p class="text-center">Z-A</p></a>
         </div>
     </div>
-    <div class="row">
-        <div class="col-6 d-flex justify-content-end">
-            <label for="start">Início</label>
-            <input type="date" name="start">
+    <form action="/" method="get">
+        <div class="row">    
+            <div class="col-6 d-flex justify-content-end">
+                
+                    <label for="start">Início</label>
+                    <input type="date" name="start">
+                </div>
+            <div class="col-6 d-flex justify-content-start">
+                <label for="start">Final</label>
+                <input type="date" name="end">
+            </div>
         </div>
-        <div class="col-6 d-flex justify-content-start">
-            <label for="start">Final</label>
-            <input type="date" name="end">
+        <div class="row">
+            <input type="submit">
         </div>
-    </div>
+    </form>    
+    
     <div class="customers">
         <?
         foreach ($customers as $customer){?>

@@ -3,7 +3,13 @@
 namespace Model;
 
 class SmartChallengeModel{
-
+    
+    public static function listUsersNoFilter(){
+        $json = file_get_contents('https://smarts-totem.s3-sa-east-1.amazonaws.com/code-challenge/customers.json');
+        $customers = json_decode($json);             
+        require __DIR__ . '/../View/dashboard.php';
+    }
+    
     public static function listUsersByBiggestBudget(){
         $json = file_get_contents('https://smarts-totem.s3-sa-east-1.amazonaws.com/code-challenge/customers.json');
         $customers = json_decode($json);
