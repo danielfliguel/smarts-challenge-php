@@ -1,0 +1,18 @@
+.customer-info{
+    border: 2px solid black;
+    max-width: 700px;
+    margin-left: 17%!important;
+    display: flex;
+    align-items: center;
+       
+    
+}
+
+.customer-data{
+    padding-top: 15px;
+}
+
+.customer-picture{
+    width: 150px;
+    height: 150px;
+}
