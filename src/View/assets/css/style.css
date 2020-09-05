@@ -1,18 +1,20 @@
-.customer-info{
-    border: 2px solid black;
-    max-width: 700px;
-    margin-left: 17%!important;
-    display: flex;
-    align-items: center;
-       
-    
-}
-
-.customer-data{
-    padding-top: 15px;
-}
-
-.customer-picture{
+td img{
     width: 150px;
     height: 150px;
+    margin-left: 24px;
+}
+
+.dataTables_length, .dataTables_info{
+    display: none;
+}
+
+.data-filter{
+    display: flex;
+    padding-left: 25%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.data-filter div{
+    margin-left: 15px;
 }
