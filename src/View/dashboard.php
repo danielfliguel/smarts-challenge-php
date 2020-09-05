@@ -29,12 +29,14 @@
                 <th>Empresa</th>
                 <th>Idade</th>
                 <th>Orçamento</th>
+                
             </tr>
         </thead>
         <tbody>
         <?
         foreach ($customers as $customer){?>
-            <tr>
+            
+            <tr class="clickable-row" data-href='/customer?id=<?echo $customer->_id?>'>
               <td><img src="<? echo $customer->pictures[0]->url ?>"></td>
               <td><? echo $customer->name->first?></td>
               <td><? echo $customer->name->last?></td>
@@ -42,6 +44,7 @@
               <td><? echo $customer->company?></td>
               <td><? echo $customer->age?></td>
               <td><? echo $customer->budget?></td> 
+              
             </tr>           
         <?}?> 
         </tbody>
