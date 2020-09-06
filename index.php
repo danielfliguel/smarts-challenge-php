@@ -2,15 +2,17 @@
 
 require 'vendor/autoload.php';
 
-use Model\SmartChallengeModel;
+use Controller\SmartsChallengeController;
 
 
-if (($_GET['start'] !== null) && ($_GET['end'] != null)){
-    SmartChallengeModel::listUsersByRegisterDate();
+if (isset($_GET)){
+    SmartsChallengeController::getDashboardDateFilter();
 }
 else{
-    SmartChallengeModel::listUsersNoFilter();
+    SmartsChallengeController::getDashboardNoFilter();
 }
+
+
 
 
 

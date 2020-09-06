@@ -2,12 +2,12 @@
 
 namespace Model;
 
-class SmartChallengeModel{
+class SmartsChallengeModel{
     
-    public static function listUsersNoFilter(){
+    public static function listUsers($viewPath){
         $json = file_get_contents('https://smarts-totem.s3-sa-east-1.amazonaws.com/code-challenge/customers.json');
         $customers = json_decode($json);        
-        require __DIR__ . '/../View/dashboard.php';
+        require $viewPath;
     }
 
     public static function filterUsersByRegisterDate(){
@@ -26,12 +26,23 @@ class SmartChallengeModel{
         return $newCustomers;
     }
 
-    public static function listUsersByRegisterDate(){
+    public static function listUsersByRegisterDate($viewPath){
         
-        $customers = self::filterUsersByRegisterDate();
-        
+        $customers = self::filterUsersByRegisterDate();        
                 
-        require __DIR__ . '/../View/dashboard.php';
-    }      
+        require $viewPath;
+    }
+    
+    public static function listCustomerDetails($viewPath){
+        $json = file_get_contents('https://smarts-totem.s3-sa-east-1.amazonaws.com/code-challenge/customers.json');
+        
+        $customers = json_decode($json);              
+        
+        
+        
+        require $viewPath;
+
+        
+    }
 
 }

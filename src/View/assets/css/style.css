@@ -18,3 +18,9 @@ td img{
 .data-filter div{
     margin-left: 15px;
 }
+
+.customer-details{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%
+}

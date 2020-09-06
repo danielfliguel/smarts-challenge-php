@@ -36,8 +36,8 @@
         <?
         foreach ($customers as $customer){?>
             
-            <tr class="clickable-row" data-href='/customer?id=<?echo $customer->_id?>'>
-              <td><img src="<? echo $customer->pictures[0]->url ?>"></td>
+            <tr>
+              <td><a href="/customer.php?id=<?echo $customer->_id?>" target="_blank"><img src="<? echo $customer->pictures[0]->url ?>"></a></td>
               <td><? echo $customer->name->first?></td>
               <td><? echo $customer->name->last?></td>
               <td><? echo $customer->email?></td>
@@ -50,5 +50,8 @@
         </tbody>
     </table>     
 </div>
- <? include('footer.php');  
+<script type="text/javascript" src="./src/View/assets/js/datatables.js"></script>
+
+</body>
+</html>
 
