@@ -5,8 +5,9 @@ $(document).ready(function(){
             "language": {
                 "paginate": {
                     "previous": "Anterior",
-                    "next": "Próxima"
-                }
+                    "next": "Próxima",                    
+                },
+                "emptyTable": "Não há registros"
             },
             "aoColumns": [
                 { "bSortable": false },

@@ -1,25 +1,40 @@
 <?php include('head.php') ?>
 
 <div class="container">
-    <h1 class="text-center">Smarts Dashboard</h1>  
+    <div class="row mt-5 mb-5">
+        <div class="col-3">
+            <img src="./src/View/assets/img/logo.png" alt="">
+        </div>
+        <div class="col-7">
+            <h1 class="text-center">Smart Staff Customers Dashboard</h1>  
+        </div>
+    </div>    
     
     <form action="/" method="get">
-        <div class="data-filter">    
-            <div>                
-                <label for="start">Início</label>
-                <input type="date" name="start" required>
-            </div>
-            <div>
-                <label for="start">Final</label>
-                <input type="date" name="end" required >
-            </div>
-            <div>
-                <input class="btn btn-info" type="submit" value="Filtrar por data de registro">            
-            </div>
-        </div>      
-    </form>
         
-    <table class="table table-bordered table-stripped table-hover">
+            
+                <div class="row">
+                    <div class="col-3">
+                        <label class="form-control-label" for="start">Início</label>
+                        <input class="form-control " type="date" name="start" required>
+                    </div>
+                    <div class="col-3">
+                        <label class="form-control-label" for="start">Final</label>
+                        <input class="form-control " type="date" name="end" required >
+                    </div>
+                    <div class="col-2">
+                        <label style="color: transparent">#</label>
+                        <input class="btn btn-info form-control" type="submit" value="Filtrar">            
+                    </div>                    
+                </div>
+
+        
+    </form>
+   
+        <a href="/"><button class="btn btn-danger clear-filter">Limpar filtros</button></a>
+    
+        
+    <table class="table table-bordered">
         <thead>
             <tr>
                 <th>Foto</th>
