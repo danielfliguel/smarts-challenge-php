@@ -1,11 +1,11 @@
 <?php include('head.php') ?>
 
 <div class="container">
-    <div class="row mt-5 mb-5">
-        <div class="col-3">
-            <img src="./src/View/assets/img/logo.png" alt="">
+    <div class="row mt-5 mb-2 mb-lg-5">
+        <div class="col-2">
+            <img class="smarts-logo" src="./src/View/assets/img/logo.png" alt="">
         </div>
-        <div class="col-7">
+        <div class="col-10">
             <h1 class="text-center">Smart Staff Customers Dashboard</h1>  
         </div>
     </div>    
@@ -14,17 +14,17 @@
         
             
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <label class="form-control-label" for="start">Início</label>
                         <input class="form-control " type="date" name="start" required>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <label class="form-control-label" for="start">Final</label>
                         <input class="form-control " type="date" name="end" required >
                     </div>
-                    <div class="col-2">
+                    <div class="col-8 col-lg-3">
                         <label style="color: transparent">#</label>
-                        <input class="btn btn-info form-control" type="submit" value="Filtrar">            
+                        <input class="btn btn-info form-control" type="submit" value="Filtrar por data de registro">            
                     </div>                    
                 </div>
 

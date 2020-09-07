@@ -34,12 +34,12 @@ td {
 }
 
 form{
-    padding-left: 20%;
+    padding-left: 0%;
     
 }
 
 .clear-filter{
-    margin-left: 74%;
+    margin-left: 77%;
     margin-top: -67px;
 }
 
@@ -58,4 +58,26 @@ form{
 td, th, h1, label, p, h2{
     font-weight: 500;
     color: #8C1842;
+}
+
+.pictures-profile-details{
+    margin-left: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 700px){
+    .smarts-logo{
+        width: 90px;
+    }
+    h1,h2{
+        font-size: 20px!important;
+    }
+
+    .clear-filter{
+        margin-left: 64%;
+    }
+
+    .pictures-profile-details{
+     width: 130px;
+     margin-left: 0;
+}
 }
