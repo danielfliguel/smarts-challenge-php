@@ -5,10 +5,12 @@ require 'vendor/autoload.php';
 use Controller\SmartsChallengeController;
 
 
-SmartsChallengeController::getCustomerDetails();
-
-
-
+if (isset($_GET)){
+  SmartsChallengeController::getDashboardDateFilter();
+}
+else{
+  SmartsChallengeController::getDashboardNoFilter();
+}
 
 
 
