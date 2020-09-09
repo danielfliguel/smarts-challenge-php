@@ -1,12 +1,12 @@
 <?php include 'head.php'; ?>
 
 <div class="container">
-    <div class="row mt-2 mt-lg-5 mb-2 mb-lg-5">
-        <div class="col-3">
-            <img class="smarts-logo" src="./src/View/assets/img/logo.png" alt="">
+    <div class="row mt-2 mt-lg-5 mb-4 mb-lg-2 mb-lg-5">
+        <div class="col-4 col-md-3 smarts-logo-details">
+            <img src="./src/View/assets/img/logo.png" alt="">
         </div>
         <div class="col-8">
-            <h1 class="text-center">Detalhes do cliente</h1>  
+            <h1 class="details-title">Detalhes do cliente</h1>  
         </div>
     </div> 
     <div class="customer-details">
@@ -103,7 +103,7 @@
                 </div>
                 <div class="row">
                     <?foreach ($customer->pictures as $picture){?>
-                        <div class="col-6 col-lg-3 mb-2 mb-lg-0">
+                        <div class="col-6 col-md-4 col-lg-3 mb-2 mb-md-3 mb-lg-0">
                             <img class="pictures-profile-details" width="150" height="150" src="<?echo $picture->url?>">
                         </div>
                     <?}?>
@@ -115,17 +115,7 @@
         </div>
     </div>
 </div>
-<script>
-    function initMap() {
-    var longitude = document.getElementById('longitude-val').innerHTML;
-    var latitude = document.getElementById('latitude-val').innerHTML;       
-    
-    var location = {lat: parseFloat(latitude), lng: parseFloat(longitude)};
-    var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 4, center: location});
-    var marker = new google.maps.Marker({position: location, map: map});
-    }
-</script>
+<script src="./src/View/assets/js/maps.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSNbXMnxzY_y2_hdy6IEzbS7afJQa3xeM&callback=initMap"></script>
 </body>
 </html>

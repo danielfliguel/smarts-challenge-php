@@ -64,9 +64,17 @@ td, th, h1, label, p, h2{
     margin-left: 20px;
 }
 
+.details-title{
+    text-align: center;
+}
+
+.customer-title{
+    margin-top: -50px;
+}
+
 @media (min-width: 320px) and (max-width: 700px){
-    .smarts-logo{
-        width: 90px;
+    .smarts-logo img{
+        width: 40%;
     }
     h1,h2{
         font-size: 20px!important;
@@ -79,5 +87,60 @@ td, th, h1, label, p, h2{
     .pictures-profile-details{
      width: 130px;
      margin-left: 0;
+    }
+    table{
+        width: 100%!important;
+    }
+
+    .table td, .table th{
+        font-size: 10px;
+    }
+    body{
+        padding-bottom: 1%;
+    }
+    .customer-title{
+        width: 200%;
+        margin-top: -25px;
+        margin-bottom: 25px;
+    }
+    .smarts-logo-details img{
+        width: 100%;
+    }
+
+    .details-title{
+        text-align: left;
+    }
+
+    p{
+        font-size: 12px;;
+    }
+    span{
+        font-size: 14px;
+    }
 }
+@media (min-width: 760px) and (max-width: 1000px){
+    .customer-title{
+        width: 120%;
+        margin-top: -30px;
+        margin-bottom: 30px;
+
+    }
+    h1{
+        font-size: 30px!important;
+    }
+    .smarts-logo img{
+        width: 20%;        
+    }
+    .clear-filter{
+        margin-left: 33%;
+        margin-top: -65px;
+        
+    }
+    body{
+        padding-bottom: 1%;
+    }
+
+    .smarts-logo-details img{
+        width: 100%;
+    }
 }
