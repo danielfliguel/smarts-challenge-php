@@ -2,10 +2,10 @@
 ---
 
 ## Funcionalidades
-* Esta aplicação constrói uma lista de usuários a partir de um arquivos JSON.
+* Esta aplicação constrói uma lista de usuários a partir de um arquivo JSON.
 * A aplicação permite ordenar a exibição dos dados por: nome do usuário, email, empresa, idade e orçamento.
 * É possível filtrar o número de usuários exibidos pela data de registro ao informar um intervalo de datas nos campos localizados acima da lista.
-* Ao clicar sobre a foto de um usuário, são exibidos os detalhes do mesmo em uma nova página.
+* Ao clicar sobre a foto de um usuário, são exibidos os detalhes do mesmo em uma nova aba.
 ---
 
 ## Instalação do ambiente
