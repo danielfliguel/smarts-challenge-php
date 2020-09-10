@@ -9,19 +9,25 @@
 ---
 
 ## Instalação do ambiente
-1. Para configurar um ambiente PHP no Windows, siga as instruções do vídeo disponível em:
+1. Instale o Docker for windows, disponível em:
     
-    `https://www.youtube.com/watch?v=zppAIfNOApM`
+    `https://hub.docker.com/editions/community/docker-ce-desktop-windows/`
 
-2. Para clonar o repositório, instale a ferramenta Git for Windows, disponível em:
+2. Instale a ferramenta Git for Windows, disponível em:
 
     `https://gitforwindows.org/`
 
-3. Navegue até a pasta escolhida para rodar o servidor, clique com o botão direito e escolha a opção "Git Bash Here"
+4. Crie uma pasta em qualquer local com o nome de sua preferência. Dentro da pasta criada, clique com o botão direito e escolha a opção "Git bash here". Dentro do terminal que se abrirá digite:
 
-4. Dentro do terminal digite:
+    `git clone https://github.com/danielfliguel/docker-php.git smarts-challenge`
 
+5. Após a conclusão do processo, feche o terminal, entre na pasta `www`, clique com o botão direito e escolha "Git bash here". Dentro do terminal digite:
     `git clone https://github.com/danielfliguel/smarts-challenge-php.git .`
 
-5. Abra o navegador e digite na barra de endereço a URL do seu servidor local 
-    
+6. Retorne à raiz da pasta criada no passo 4, segure a tecla shift, clique com o botão direito e escolha a opção "Abrir janela do PowerShell aqui".
+
+7. Com o PowerShell aberto, digite o comando `docker-compose up -d --build`
+
+8. Após a conclusão do processo, digite `docker-compose up`
+
+9. Abra o navegador e digite `localhost/`
