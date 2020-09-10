@@ -36,3 +36,9 @@
 9. Após a conclusão do processo, digite `docker-compose up`
 
 10. Abra o navegador e digite `localhost/`
+---
+
+## Imagens
+![Alt text](./screenshots/dashboard.png?raw=true "Dashboard")
+![Alt text](./screenshots/user-details.png?raw=true "User details")
+
