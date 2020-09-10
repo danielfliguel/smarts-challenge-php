@@ -17,11 +17,13 @@
 
     `https://gitforwindows.org/`
 
-4. Escolha um local de sua preferência para baixar o projeto, clique com o botão direito e escolha a opção "Git bash here". Dentro do terminal que se abrirá digite:
+4. Escolha um local de sua preferência para baixar o projeto, clique com o botão direito dentro do local escolhido e clique em "Git bash here". Dentro do terminal que se abrirá digite:
 
     `git clone https://github.com/danielfliguel/docker-php.git smarts-challenge`
 
-5. Após a conclusão do processo, feche o terminal, entre na pasta `www`, exclua o arquivo `index.php`, clique com o botão direito e escolha a opção "Git bash here". Dentro do terminal digite:
+5. Após a conclusão do processo, feche o terminal e abra a pasta `smarts-challenge`.
+
+6. Entre na pasta `www` e exclua o arquivo `index.php`. Clique com o botão direito e escolha a opção "Git bash here". Dentro do terminal digite:
 
     `git clone https://github.com/danielfliguel/smarts-challenge-php.git .`
 
