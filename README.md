@@ -17,20 +17,22 @@
 
     `https://gitforwindows.org/`
 
-4. Escolha um local de sua preferência para baixar o projeto, clique com o botão direito dentro do local escolhido e clique em "Git bash here". Dentro do terminal que se abrirá digite:
+3. Escolha um local de sua preferência para baixar o projeto, clique com o botão direito dentro do local escolhido e escolha a opção "Git bash here". Dentro do terminal que se abrirá digite:
 
     `git clone https://github.com/danielfliguel/docker-php.git smarts-challenge`
 
-5. Após a conclusão do processo, feche o terminal e abra a pasta `smarts-challenge`
+4. Após a conclusão do processo, será criada a pasta `smarts-challenge` no local.  
 
-6. Entre na pasta `www` e exclua o arquivo `index.php`. Clique com o botão direito e escolha a opção "Git bash here". Dentro do terminal digite:
+5. Abra a pasta `smarts-challenge` e abra a pasta `www`. Exclua o arquivo `index.php`, clique com o botão direito e escolha a opção "Git bash here". Dentro do terminal digite:
 
     `git clone https://github.com/danielfliguel/smarts-challenge-php.git .`
 
 6. Retorne à raiz da pasta criada no passo 4, segure a tecla shift, clique com o botão direito e escolha a opção "Abrir janela do PowerShell aqui"
 
-7. Com o PowerShell aberto, digite o comando `docker-compose up -d --build`
+7. Digite o comando `docker ps` e verifique se há containers rodando. Caso haja, pare todos com o comando `docker stop $(docker ps -a -q)` antes de prosseguir
 
-8. Após a conclusão do processo, digite `docker-compose up`
+8. Digite o comando `docker-compose up -d --build`
 
-9. Abra o navegador e digite `localhost/`
+9. Após a conclusão do processo, digite `docker-compose up`
+
+10. Abra o navegador e digite `localhost/`
